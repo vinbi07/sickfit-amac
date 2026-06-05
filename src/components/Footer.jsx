@@ -8,12 +8,12 @@ export default function Footer() {
           <a className="amac-wordmark" href="#top">
             <img src={sickfitLogo} alt="SickFit" />
           </a>
-          <p>Performance. Compression. Recovery.</p>
+          <p><strong>Performance. Compression. Recovery.</strong></p>
           <p>
-            <a href="mailto:psickles@sickfitofficial.com">psickles@sickfitofficial.com</a>
-            <span> / </span>
+            <a href="mailto:sales@sickfitofficial.com">sales@sickfitofficial.com</a>
+            <span> - </span>
             <a href="https://sickfitofficial.com">sickfitofficial.com</a>
-            <span> / </span>
+            <span> - </span>
             <a href="https://linktr.ee/sickfitofficial" target="_blank" rel="noreferrer">
               @sickfitofficial
             </a>
