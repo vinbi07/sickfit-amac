@@ -20,9 +20,6 @@ export default function Footer() {
           <a className="amac-button" href="#request-airport">
             Request Your Airport
           </a>
-          <a className="amac-button-secondary" href="#book-time">
-            Book a Time
-          </a>
         </div>
       </div>
     </footer>

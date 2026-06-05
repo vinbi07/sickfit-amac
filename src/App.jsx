@@ -7,18 +7,39 @@ import StatsSection from "./components/StatsSection.jsx";
 import ConferenceOffer from "./components/ConferenceOffer.jsx";
 import CertificationBadges from "./components/CertificationBadges.jsx";
 import Footer from "./components/Footer.jsx";
+import georgiaSockImage from "./public/assets/GeorgiaSock.jpeg";
+import utahSockImage from "./public/assets/UtahSock.png";
 
 const navLinks = [
   { label: "City Socks", href: "#city-socks" },
   { label: "Request Airport", href: "#request-airport" },
   { label: "Booth 114", href: "#booth" },
-  { label: "Book Time", href: "#book-time" },
 ];
 
 const cityCards = [
-  { city: "Dallas", market: "Texas", airport: "DFW", label: "Dallas sock photo" },
-  { city: "Utah", market: "Salt Lake City", airport: "SLC", label: "Utah sock photo" },
-  { city: "Georgia", market: "Atlanta", airport: "ATL", label: "Georgia sock photo" },
+  {
+    city: "Dallas",
+    market: "Texas",
+    airport: "DFW",
+    label: "Dallas sock photo",
+    imagePosition: "80% center",
+  },
+  {
+    city: "Utah",
+    market: "Salt Lake City",
+    airport: "SLC",
+    label: "Utah sock photo",
+    imageSrc: utahSockImage,
+    imagePosition: "45% 56%",
+  },
+  {
+    city: "Georgia",
+    market: "Atlanta",
+    airport: "ATL",
+    label: "Georgia sock photo",
+    imageSrc: georgiaSockImage,
+    imagePosition: "50% center",
+  },
 ];
 
 const stats = [
