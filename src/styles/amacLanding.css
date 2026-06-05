@@ -786,6 +786,7 @@
 
 .amac-footer .amac-wordmark {
   display: inline-block;
+  opacity: 1;
   margin-bottom: 10px;
 }
 
