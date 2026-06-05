@@ -721,6 +721,8 @@
 .amac-offer-steps li {
   display: grid;
   grid-template-columns: auto 1fr;
+  align-content: start;
+  align-items: start;
   gap: 14px;
   padding: 18px;
   border: 1px solid var(--border);
@@ -728,7 +730,7 @@
   background: rgba(255, 250, 244, 0.74);
 }
 
-.amac-offer-steps span {
+.amac-offer-steps li > span {
   display: grid;
   place-items: center;
   width: 34px;
@@ -740,10 +742,20 @@
 }
 
 .amac-offer-steps p {
+  align-self: start;
   margin: 0;
   color: var(--text-muted);
   font-weight: 800;
   line-height: 1.6;
+}
+
+.amac-offer-steps p a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.amac-offer-steps p a:hover {
+  text-decoration: underline;
 }
 
 .amac-badges-section {

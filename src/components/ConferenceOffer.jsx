@@ -1,3 +1,20 @@
+const SICKFIT_SOCIAL_URL = "https://linktr.ee/sickfitofficial";
+
+function renderStepText(step) {
+  const parts = step.split("@sickfitofficial");
+
+  return parts.flatMap((part, index) => {
+    if (index === parts.length - 1) return part;
+
+    return [
+      part,
+      <a href={SICKFIT_SOCIAL_URL} target="_blank" rel="noreferrer" key={`${part}-${index}`}>
+        @sickfitofficial
+      </a>,
+    ];
+  });
+}
+
 export default function ConferenceOffer({ offerSteps }) {
   return (
     <section className="amac-section">
@@ -15,7 +32,7 @@ export default function ConferenceOffer({ offerSteps }) {
               {offerSteps.map((step, index) => (
                 <li key={step}>
                   <span>{index + 1}</span>
-                  <p>{step}</p>
+                  <p>{renderStepText(step)}</p>
                 </li>
               ))}
             </ol>

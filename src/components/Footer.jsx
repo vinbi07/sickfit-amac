@@ -13,7 +13,10 @@ export default function Footer() {
             <a href="mailto:psickles@sickfitofficial.com">psickles@sickfitofficial.com</a>
             <span> / </span>
             <a href="https://sickfitofficial.com">sickfitofficial.com</a>
-            <span> / @sickfitofficial</span>
+            <span> / </span>
+            <a href="https://linktr.ee/sickfitofficial" target="_blank" rel="noreferrer">
+              @sickfitofficial
+            </a>
           </p>
         </div>
         <div className="amac-footer-actions">
