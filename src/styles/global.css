@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #f5f0ea;
+  --foreground: #231d18;
+  --surface: #fffaf4;
+  --surface-elevated: rgba(255, 252, 248, 0.92);
+  --surface-strong: #f2e8de;
+  --border: rgba(78, 57, 43, 0.14);
+  --border-strong: rgba(78, 57, 43, 0.24);
+  --text-muted: rgba(35, 29, 24, 0.72);
+  --text-subtle: rgba(35, 29, 24, 0.5);
+  --accent: #e72027;
+  --accent-hover: #bf1d23;
+  --accent-soft: rgba(231, 32, 39, 0.1);
+  --accent-border: rgba(231, 32, 39, 0.34);
+  --shadow-soft: 0 18px 40px rgba(74, 48, 32, 0.12);
+  --shadow-strong: 0 30px 80px rgba(74, 48, 32, 0.16);
+  --heading-font: "Gilroy", "Arial Black", Impact, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

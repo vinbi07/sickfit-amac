@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" role="img" aria-label="Abstract airport retail hero background placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#4b3328"/>
+      <stop offset="0.46" stop-color="#2b211c"/>
+      <stop offset="1" stop-color="#14100d"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#231d18"/>
+      <stop offset="0.52" stop-color="#6c5041"/>
+      <stop offset="1" stop-color="#251b16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.3" r="0.42">
+      <stop offset="0" stop-color="#e72027" stop-opacity="0.52"/>
+      <stop offset="0.45" stop-color="#e72027" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#e72027" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#sky)"/>
+  <rect y="610" width="1800" height="390" fill="url(#floor)"/>
+  <rect width="1800" height="1000" fill="url(#glow)"/>
+  <path d="M0 610h1800" stroke="#fffaf4" stroke-opacity="0.16" stroke-width="3"/>
+  <path d="M1160 0 860 1000M1380 0 1080 1000M1580 0 1280 1000" stroke="#fffaf4" stroke-opacity="0.08" stroke-width="5"/>
+  <path d="M120 1000 675 610M430 1000 850 610M740 1000 1025 610M1050 1000 1200 610M1360 1000 1375 610" stroke="#fffaf4" stroke-opacity="0.1" stroke-width="4"/>
+  <g opacity="0.28">
+    <rect x="1090" y="286" width="370" height="214" rx="10" fill="#fffaf4"/>
+    <rect x="1128" y="324" width="86" height="138" fill="#14100d"/>
+    <rect x="1246" y="324" width="86" height="138" fill="#14100d"/>
+    <rect x="1364" y="324" width="58" height="138" fill="#14100d"/>
+  </g>
+  <g opacity="0.2" fill="#fffaf4">
+    <rect x="980" y="560" width="520" height="24" rx="12"/>
+    <rect x="1060" y="612" width="380" height="18" rx="9"/>
+  </g>
+</svg>

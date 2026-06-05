@@ -1,0 +1,857 @@
+.amac-page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(231, 32, 39, 0.12), transparent 32rem),
+    linear-gradient(180deg, #f8f2ec 0%, var(--background) 48%, #efe4da 100%);
+}
+
+.amac-container {
+  width: min(100% - 40px, 1160px);
+  margin: 0 auto;
+}
+
+.amac-section {
+  padding: 84px 0;
+}
+
+.amac-section-label {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.amac-section-heading {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.amac-section-heading h2,
+.amac-request-copy h2,
+.amac-calendar-grid h2,
+.amac-offer-panel h2 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.amac-section-heading p:not(.amac-section-label),
+.amac-request-copy p,
+.amac-calendar-grid p {
+  max-width: 670px;
+  color: var(--text-muted);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.amac-button,
+.amac-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.85rem 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.amac-button {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 14px 26px rgba(231, 32, 39, 0.22);
+}
+
+.amac-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.amac-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.amac-button-secondary {
+  background: rgba(255, 250, 244, 0.72);
+  border-color: var(--border-strong);
+  color: var(--foreground);
+}
+
+.amac-button-secondary:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.amac-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 250, 244, 0.9);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.amac-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 76px;
+}
+
+.amac-wordmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  text-decoration: none;
+}
+
+.amac-wordmark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.amac-nav-badge {
+  padding: 0.34rem 0.55rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.amac-nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+}
+
+.amac-nav-links a {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.amac-nav-links a:hover {
+  color: var(--accent);
+}
+
+.amac-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 660px;
+  padding: 112px 0 92px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(20, 16, 13, 0.74), rgba(20, 16, 13, 0.88)),
+    linear-gradient(115deg, rgba(231, 32, 39, 0.2), transparent 34%),
+    url("../public/assets/hero-background-placeholder.svg") center / cover no-repeat,
+    #14100d;
+  color: #fffaf4;
+}
+
+.amac-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 80% 18%, rgba(231, 32, 39, 0.22), transparent 18rem),
+    linear-gradient(90deg, rgba(20, 16, 13, 0.28), rgba(20, 16, 13, 0.04));
+}
+
+.amac-hero .amac-section-label {
+  color: rgba(255, 250, 244, 0.78);
+}
+
+.amac-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.75fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.amac-hero-copy h1 {
+  max-width: 760px;
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: clamp(4rem, 10vw, 5rem);
+  line-height: 0.83;
+  text-transform: uppercase;
+}
+
+.amac-hero-copy h1 span {
+  display: block;
+  color: #fff;
+}
+
+.amac-hero-text {
+  max-width: 650px;
+  margin: 28px 0 0;
+  color: rgba(255, 250, 244, 0.84);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.72;
+}
+
+.amac-hero-meta {
+  display: inline-flex;
+  margin: 28px 0 24px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(255, 250, 244, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 250, 244, 0.1);
+  color: #fffaf4;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  backdrop-filter: blur(14px);
+}
+
+.amac-hero-actions,
+.amac-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.amac-hero-card,
+.amac-card,
+.amac-form-card,
+.amac-calendar-placeholder,
+.amac-offer-panel,
+.amac-booth-number-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(242, 232, 222, 0.58)),
+    var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.amac-hero-card {
+  min-height: 300px;
+  padding: 28px;
+  border-color: rgba(255, 250, 244, 0.22);
+  background:
+    linear-gradient(145deg, rgba(255, 250, 244, 0.14), rgba(255, 250, 244, 0.06)),
+    rgba(20, 16, 13, 0.68);
+  color: #fffaf4;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(18px);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.amac-hero-card:hover,
+.amac-card:hover,
+.amac-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+}
+
+.amac-hero-card-top,
+.amac-hero-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.amac-hero-card-top p,
+.amac-hero-card-top span,
+.amac-hero-card-bottom span {
+  color: rgba(255, 250, 244, 0.68);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.amac-hero-card-top strong {
+  display: block;
+  color: #fff;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 5.6rem;
+  line-height: 0.85;
+}
+
+.amac-hero-card-divider {
+  width: 100%;
+  height: 1px;
+  margin: 44px 0;
+  background: linear-gradient(90deg, rgba(255, 250, 244, 0.1), rgba(255, 250, 244, 0.52), rgba(255, 250, 244, 0.1));
+}
+
+.amac-city-card:hover .amac-city-image {
+  transform: scale(1.015);
+}
+
+.amac-city-image p {
+  margin: 16px 0 0;
+  color: rgba(255, 250, 244, 0.64);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.amac-city-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.amac-card,
+.amac-stat-card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.amac-city-card {
+  overflow: hidden;
+}
+
+.amac-city-image {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 20%, rgba(231, 32, 39, 0.28), transparent 9rem),
+    linear-gradient(145deg, #211914, #3a2c23);
+  transition: transform 180ms ease;
+}
+
+.amac-city-image img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.amac-map-pin {
+  width: 56px;
+  height: 56px;
+  border: 2px solid rgba(255, 250, 244, 0.32);
+  border-radius: 50% 50% 50% 10%;
+  transform: rotate(-45deg);
+}
+
+.amac-map-pin::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 17px auto;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.amac-city-body {
+  padding: 22px;
+}
+
+.amac-city-body h3 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.amac-city-body p:last-child {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+  font-weight: 800;
+}
+
+.amac-request-section {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 244, 0.46), rgba(242, 232, 222, 0.48)),
+    transparent;
+}
+
+.amac-request-content {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.amac-request-content .amac-request-copy {
+  display: grid;
+  justify-items: center;
+  max-width: 820px;
+}
+
+.amac-request-content .amac-proof-list {
+  justify-content: center;
+}
+
+.amac-request-button {
+  margin-top: 28px;
+}
+
+.amac-request-grid,
+.amac-calendar-grid,
+.amac-booth-grid,
+.amac-offer-grid,
+.amac-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.amac-proof-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.amac-proof-list span,
+.amac-badge-list span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-elevated);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  padding: 0.52rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.amac-form-card {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+}
+
+.amac-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.amac-form-card label {
+  display: grid;
+  gap: 7px;
+  color: var(--foreground);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.amac-input {
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background: rgba(245, 240, 234, 0.78);
+  color: var(--foreground);
+  padding: 0.86rem 0.9rem;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.amac-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  background: #fffaf4;
+}
+
+.amac-input[aria-invalid="true"] {
+  border-color: var(--accent);
+}
+
+.amac-field-error,
+.amac-form-status.is-error {
+  color: #8d1116;
+}
+
+.amac-field-error {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.amac-form-status {
+  min-height: 1.5rem;
+  margin: 0;
+  color: #23633c;
+  font-weight: 800;
+}
+
+.amac-calendar-placeholder {
+  display: grid;
+  justify-items: start;
+  gap: 18px;
+  padding: 32px;
+}
+
+.amac-calendar-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 116px;
+  height: 104px;
+  border: 2px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.amac-calendar-icon::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border-strong);
+}
+
+.amac-calendar-icon span {
+  position: absolute;
+  top: -9px;
+  width: 12px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.amac-calendar-icon span:first-child {
+  left: 24px;
+}
+
+.amac-calendar-icon span:nth-child(2) {
+  right: 24px;
+}
+
+.amac-calendar-icon strong {
+  margin-top: 22px;
+  color: var(--accent);
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+.amac-calendar-placeholder h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.amac-booth-grid {
+  grid-template-columns: 0.65fr 1fr;
+}
+
+.amac-booth-number-card {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  padding: 28px;
+  text-align: center;
+}
+
+.amac-booth-number-card p,
+.amac-booth-number-card span {
+  margin: 0;
+  color: var(--text-subtle);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.amac-booth-number-card strong {
+  color: var(--accent);
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: clamp(6rem, 16vw, 12rem);
+  line-height: 0.85;
+}
+
+.amac-booth-details-card {
+  padding: 34px;
+}
+
+.amac-booth-details-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--foreground);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.amac-stats-section {
+  padding-top: 34px;
+}
+
+.amac-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.amac-stat-card {
+  min-height: 190px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 250, 244, 0.9), rgba(231, 32, 39, 0.06)),
+    var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.amac-stat-card strong {
+  color: var(--accent);
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.9;
+}
+
+.amac-stat-card p {
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.amac-offer-panel {
+  padding: 34px;
+  background:
+    radial-gradient(circle at right top, rgba(231, 32, 39, 0.16), transparent 20rem),
+    linear-gradient(145deg, rgba(255, 250, 244, 0.96), rgba(242, 232, 222, 0.86));
+}
+
+.amac-offer-grid {
+  align-items: start;
+}
+
+.amac-offer-note {
+  display: inline-flex;
+  margin: 22px 0 0;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.amac-offer-steps {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.amac-offer-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 250, 244, 0.74);
+}
+
+.amac-offer-steps span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 900;
+}
+
+.amac-offer-steps p {
+  margin: 0;
+  color: var(--text-muted);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.amac-badges-section {
+  padding-top: 8px;
+}
+
+.amac-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.amac-badge-list span {
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.amac-badge-list span:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.amac-footer {
+  padding: 48px 0;
+  background: #14100d;
+  color: #fffaf4;
+}
+
+.amac-footer .amac-wordmark {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.amac-footer p {
+  margin: 8px 0;
+  color: rgba(255, 250, 244, 0.68);
+}
+
+.amac-footer a {
+  text-decoration: none;
+}
+
+.amac-footer .amac-button-secondary {
+  background: rgba(255, 250, 244, 0.08);
+  border-color: rgba(255, 250, 244, 0.22);
+  color: #fffaf4;
+}
+
+.amac-footer-actions {
+  justify-content: end;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 980px) {
+  .amac-nav-inner {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .amac-nav-links {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .amac-nav-cta {
+    margin-left: auto;
+  }
+
+  .amac-hero-grid,
+  .amac-request-grid,
+  .amac-calendar-grid,
+  .amac-booth-grid,
+  .amac-offer-grid,
+  .amac-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amac-hero {
+    padding-top: 64px;
+  }
+
+  .amac-hero-card {
+    min-height: auto;
+  }
+
+  .amac-city-grid,
+  .amac-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .amac-footer-actions {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 680px) {
+  .amac-container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .amac-section {
+    padding: 58px 0;
+  }
+
+  .amac-nav-badge,
+  .amac-nav-cta {
+    display: none;
+  }
+
+  .amac-hero-copy h1 {
+    font-size: clamp(3.2rem, 17vw, 5.8rem);
+  }
+
+  .amac-hero-actions,
+  .amac-footer-actions {
+    display: grid;
+  }
+
+  .amac-button,
+  .amac-button-secondary {
+    width: 100%;
+  }
+
+  .amac-city-grid,
+  .amac-stats-grid,
+  .amac-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .amac-form-card,
+  .amac-calendar-placeholder,
+  .amac-offer-panel,
+  .amac-booth-details-card {
+    padding: 22px;
+  }
+
+  .amac-city-image {
+    min-height: 240px;
+  }
+
+  .amac-offer-steps li {
+    grid-template-columns: 1fr;
+  }
+}
