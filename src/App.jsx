@@ -43,9 +43,9 @@ const cityCards = [
 ];
 
 const stats = [
-  { value: "600+", label: "pairs · 1 store · 6 months · DFW reorder confirmed" },
-  { value: "300+", label: "pairs in under 30 min · WNBA activation" },
-  { value: "$120M+", label: "modeled revenue · 10 top US hubs" },
+  { value: "150,000+", label: "Pairs Sold" },
+  { value: "30+", label: "Sold in 30+ States" },
+  { value: "300+", label: "pairs sold in 30 min" },
 ];
 
 const offerSteps = [
